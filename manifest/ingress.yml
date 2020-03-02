@@ -2,11 +2,12 @@ apiVersion: networking.k8s.io/v1beta1 # for versions before 1.14 use extensions/
 kind: Ingress
 metadata:
   name: flaskapp
+  namespace: dev2
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-  - host: ahmed.badawy.com
+  - host: ahmed.badawy1.com
     http:
       paths:
       - path: /

@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: flaskapp
+  namespace: dev2
   labels:
     app: flaskapp
 spec:
@@ -18,7 +19,7 @@ spec:
     spec:
       containers:
       - name: flaskapp
-        image: devopsahmed/breakwater:1
+        image: devopsahmed/breakwater:2
         imagePullPolicy: Always 
         ports:
         - containerPort: 5000
