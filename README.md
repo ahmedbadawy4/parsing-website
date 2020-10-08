@@ -1,4 +1,7 @@
-# parsing the free days in the training schadual from Gym website
-### work still in in-progress 
+# breakwater
+Breakwater flask task
 
-### Check development barnches with diffrent functionality 
+build docker
+```
+docker build -f ./docker/Dockerfile .
+```
